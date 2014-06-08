@@ -1,0 +1,96 @@
+.navbar {
+    height: 54px;
+    padding-top: 15px;
+    
+    .brand {
+        @include span(2 of 12);
+        text-align: center;
+		color: darken(#fff, 20%);
+		position: relative;
+
+		h1.name {
+			font-family: 'Dancing Script', cursive;
+			font-size: 1.8em;
+			font-weight: 400; 
+			margin: 0; padding: 0;
+		}
+
+		small {
+			display: block;
+			margin-top: 0;
+			font-family: 'Istok Web', Tahoma, verdana;
+			font-size: .75em;
+			font-weight: 400;
+			color: lighten(#000, 70%);
+		}
+    }
+    
+    .nav {
+         @include span(10 of 12);
+    }
+    
+    ul {
+        height: 54px;
+        margin: 0;
+        padding: 0;
+        
+        li {
+            display: inline-block;
+            line-height: 54px;
+            list-style-type: none;
+            
+            font-family: 'Istok Web', Tahoma, verdana;
+			font-size: 1em;
+			font-weight: 400;
+            
+            padding: 0 15px;
+            
+            -webkit-transition: all 0.2s;
+            
+            &:first-child {
+                padding-left: 0;
+            }
+            
+            &:last-child {
+                padding-right: 0;
+            }
+			
+            
+            a {
+                display: block;
+                text-decoration: none;
+                color: rgba(darken(#fff, 20%), .4);
+                
+                -webkit-transition: all 0.2s;
+                
+                &:hover {
+                    color: rgba(darken(#fff, 20%), .8);
+                }
+            }
+            
+            &.active {
+                 a {
+                     color: rgba(darken(#fff, 20%), .9);
+                     text-shadow: 0 0 4px darken(#fff, 20%);
+                     font-weight: 700;
+                 }
+            }
+        }
+    }
+}
+
+.bg003 {
+    .navbar {
+        .brand {
+             color: lighten(#000, 10%);
+            
+            small {
+                color: lighten(#000, 25%);
+            }
+        }
+        
+        ul li a {
+            color: lighten(#000, 30%);
+        }
+    }
+}

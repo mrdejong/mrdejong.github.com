@@ -1,0 +1,23 @@
+<header class="page-header bg001">
+   <div class="container">
+        <nav class="navbar">
+            <div class="brand">
+                <h1 class="name">Mr. de Jong</h1>
+                <small>Programming is art!</small>
+            </div>
+
+            <div class="nav">
+                <ul>
+                    <li {% if page.id == 'home' %}class="active"{% endif %}><a href="/">Home</a></li>
+                    <li {% if page.id == 'about' %}class="active"{% endif %}><a href="/about">About</a></li>
+                    <li {% if page.id == 'projects' %}class="active"{% endif %}><a href="#">Projects</a></li>
+                    <li {% if page.id == 'blog' %}class="active"{% endif %}><a href="#">Blog</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    
+    <div class="page-title">
+        <h1>{{ page.title }}</h1>
+    </div>
+</header>

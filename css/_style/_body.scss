@@ -1,0 +1,51 @@
+body {
+	background: white; // No need for colors.
+	width: 100%;
+	color: lighten(#000, 20%);
+	font-family: 'Istok Web', Tahoma;
+}
+
+html { height: 100%; }
+
+@include layout(12 .25 split);
+
+.container {
+	@include container(80%);
+}
+
+.page {
+    padding-top: 25px;
+}
+
+header.page-header {
+	height: 320px;
+    background: white;
+    
+    background-position: 0 -280px;
+    
+    
+    &.bg001 {
+        background: url('../img/bg.jpg') no-repeat center fixed;
+    }
+    
+    &.bg002 {
+        background: url('../img/bg2.jpg') no-repeat center fixed;
+    }
+    
+    &.bg003 {
+        background: url('../img/bg3.jpg') no-repeat center fixed;
+    }
+    
+    .page-title {
+        @include span(12);
+        padding-top: 70px;
+        text-align: center;
+        
+        h1 {
+            font-family: 'Dancing Script', cursive;
+			font-size: 4em;
+			font-weight: 700; 
+			margin: 0; padding: 0;
+        }
+    }
+}
