@@ -10,7 +10,7 @@ url: "http://mrdejong.github.io"
 markdown: kramdown
 permalink: pretty
 
-#gems: [jekyll-sass]
+gems: [jekyll-sass]
 
 # Sass settings
 sass:

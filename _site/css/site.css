@@ -1,0 +1,428 @@
+@import url("http://fonts.googleapis.com/css?family=Istok+Web|Dancing+Script");
+/**
+ * This file comes right from twitter bootstrap.
+ * Please throw some respect to them!
+ * https://github.com/twbs/bootstrap-sass
+ * http://getbootstrap.com/
+ */
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+/* line 15, C:\wamp\projects\mrdejong.github.com\css\_style\_reset.scss */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* line 25, C:\wamp\projects\mrdejong.github.com\css\_style\_reset.scss */
+body {
+  margin: 0;
+}
+
+/* line 38, C:\wamp\projects\mrdejong.github.com\css\_style\_reset.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* line 58, C:\wamp\projects\mrdejong.github.com\css\_style\_reset.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+/* line 71, C:\wamp\projects\mrdejong.github.com\css\_style\_reset.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 81, C:\wamp\projects\mrdejong.github.com\css\_style\_reset.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* line 93, C:\wamp\projects\mrdejong.github.com\css\_style\_reset.scss */
+a {
+  background: transparent;
+}
+
+/* line 101, C:\wamp\projects\mrdejong.github.com\css\_style\_reset.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* line 113, C:\wamp\projects\mrdejong.github.com\css\_style\_reset.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 121, C:\wamp\projects\mrdejong.github.com\css\_style\_reset.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 130, C:\wamp\projects\mrdejong.github.com\css\_style\_reset.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 139, C:\wamp\projects\mrdejong.github.com\css\_style\_reset.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* line 148, C:\wamp\projects\mrdejong.github.com\css\_style\_reset.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 157, C:\wamp\projects\mrdejong.github.com\css\_style\_reset.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 165, C:\wamp\projects\mrdejong.github.com\css\_style\_reset.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 173, C:\wamp\projects\mrdejong.github.com\css\_style\_reset.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 177, C:\wamp\projects\mrdejong.github.com\css\_style\_reset.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 188, C:\wamp\projects\mrdejong.github.com\css\_style\_reset.scss */
+img {
+  border: 0;
+}
+
+/* line 196, C:\wamp\projects\mrdejong.github.com\css\_style\_reset.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 207, C:\wamp\projects\mrdejong.github.com\css\_style\_reset.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/* line 215, C:\wamp\projects\mrdejong.github.com\css\_style\_reset.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/* line 225, C:\wamp\projects\mrdejong.github.com\css\_style\_reset.scss */
+pre {
+  overflow: auto;
+}
+
+/* line 233, C:\wamp\projects\mrdejong.github.com\css\_style\_reset.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* line 256, C:\wamp\projects\mrdejong.github.com\css\_style\_reset.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+/* line 270, C:\wamp\projects\mrdejong.github.com\css\_style\_reset.scss */
+button {
+  overflow: visible;
+}
+
+/* line 281, C:\wamp\projects\mrdejong.github.com\css\_style\_reset.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/* line 294, C:\wamp\projects\mrdejong.github.com\css\_style\_reset.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* line 306, C:\wamp\projects\mrdejong.github.com\css\_style\_reset.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/* line 315, C:\wamp\projects\mrdejong.github.com\css\_style\_reset.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 326, C:\wamp\projects\mrdejong.github.com\css\_style\_reset.scss */
+input {
+  line-height: normal;
+}
+
+/* line 338, C:\wamp\projects\mrdejong.github.com\css\_style\_reset.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 350, C:\wamp\projects\mrdejong.github.com\css\_style\_reset.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/* line 361, C:\wamp\projects\mrdejong.github.com\css\_style\_reset.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 374, C:\wamp\projects\mrdejong.github.com\css\_style\_reset.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 383, C:\wamp\projects\mrdejong.github.com\css\_style\_reset.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* line 394, C:\wamp\projects\mrdejong.github.com\css\_style\_reset.scss */
+legend {
+  border: 0;
+  padding: 0;
+}
+
+/* line 403, C:\wamp\projects\mrdejong.github.com\css\_style\_reset.scss */
+textarea {
+  overflow: auto;
+}
+
+/* line 412, C:\wamp\projects\mrdejong.github.com\css\_style\_reset.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* line 423, C:\wamp\projects\mrdejong.github.com\css\_style\_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 428, C:\wamp\projects\mrdejong.github.com\css\_style\_reset.scss */
+td,
+th {
+  padding: 0;
+}
+
+/* line 1, C:\wamp\projects\mrdejong.github.com\css\_style\_body.scss */
+body {
+  background: white;
+  width: 100%;
+  color: #333333;
+  font-family: 'Istok Web', Tahoma;
+}
+
+/* line 8, C:\wamp\projects\mrdejong.github.com\css\_style\_body.scss */
+html {
+  height: 100%;
+}
+
+/* line 12, C:\wamp\projects\mrdejong.github.com\css\_style\_body.scss */
+.container {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, C:\Ruby200-x64\lib\ruby\gems\2.0.0\gems\susy-2.1.2\sass\susy\output\support\_clearfix.scss */
+.container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 16, C:\wamp\projects\mrdejong.github.com\css\_style\_body.scss */
+.page {
+  padding-top: 25px;
+}
+
+/* line 20, C:\wamp\projects\mrdejong.github.com\css\_style\_body.scss */
+header.page-header {
+  height: 320px;
+  background: white;
+  background-position: 0 -280px;
+}
+/* line 27, C:\wamp\projects\mrdejong.github.com\css\_style\_body.scss */
+header.page-header.bg001 {
+  background: url("../img/bg.jpg") no-repeat center fixed;
+}
+/* line 31, C:\wamp\projects\mrdejong.github.com\css\_style\_body.scss */
+header.page-header.bg002 {
+  background: url("../img/bg2.jpg") no-repeat center fixed;
+}
+/* line 35, C:\wamp\projects\mrdejong.github.com\css\_style\_body.scss */
+header.page-header.bg003 {
+  background: url("../img/bg3.jpg") no-repeat center fixed;
+}
+/* line 39, C:\wamp\projects\mrdejong.github.com\css\_style\_body.scss */
+header.page-header .page-title {
+  width: 98.33333%;
+  float: left;
+  margin-left: 0.83333%;
+  margin-right: 0.83333%;
+  padding-top: 70px;
+  text-align: center;
+}
+/* line 44, C:\wamp\projects\mrdejong.github.com\css\_style\_body.scss */
+header.page-header .page-title h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 4em;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 1, C:\wamp\projects\mrdejong.github.com\css\_style\_navigation.scss */
+.navbar {
+  height: 54px;
+  padding-top: 15px;
+}
+/* line 5, C:\wamp\projects\mrdejong.github.com\css\_style\_navigation.scss */
+.navbar .brand {
+  width: 15%;
+  float: left;
+  margin-left: 0.83333%;
+  margin-right: 0.83333%;
+  text-align: center;
+  color: #cccccc;
+  position: relative;
+}
+/* line 11, C:\wamp\projects\mrdejong.github.com\css\_style\_navigation.scss */
+.navbar .brand h1.name {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.8em;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+/* line 18, C:\wamp\projects\mrdejong.github.com\css\_style\_navigation.scss */
+.navbar .brand small {
+  display: block;
+  margin-top: 0;
+  font-family: 'Istok Web', Tahoma, verdana;
+  font-size: .75em;
+  font-weight: 400;
+  color: #b3b3b3;
+}
+/* line 28, C:\wamp\projects\mrdejong.github.com\css\_style\_navigation.scss */
+.navbar .nav {
+  width: 81.66667%;
+  float: left;
+  margin-left: 0.83333%;
+  margin-right: 0.83333%;
+}
+/* line 32, C:\wamp\projects\mrdejong.github.com\css\_style\_navigation.scss */
+.navbar ul {
+  height: 54px;
+  margin: 0;
+  padding: 0;
+}
+/* line 37, C:\wamp\projects\mrdejong.github.com\css\_style\_navigation.scss */
+.navbar ul li {
+  display: inline-block;
+  line-height: 54px;
+  list-style-type: none;
+  font-family: 'Istok Web', Tahoma, verdana;
+  font-size: 1em;
+  font-weight: 400;
+  padding: 0 15px;
+  -webkit-transition: all 0.2s;
+}
+/* line 50, C:\wamp\projects\mrdejong.github.com\css\_style\_navigation.scss */
+.navbar ul li:first-child {
+  padding-left: 0;
+}
+/* line 54, C:\wamp\projects\mrdejong.github.com\css\_style\_navigation.scss */
+.navbar ul li:last-child {
+  padding-right: 0;
+}
+/* line 59, C:\wamp\projects\mrdejong.github.com\css\_style\_navigation.scss */
+.navbar ul li a {
+  display: block;
+  text-decoration: none;
+  color: rgba(204, 204, 204, 0.4);
+  -webkit-transition: all 0.2s;
+}
+/* line 66, C:\wamp\projects\mrdejong.github.com\css\_style\_navigation.scss */
+.navbar ul li a:hover {
+  color: rgba(204, 204, 204, 0.8);
+}
+/* line 72, C:\wamp\projects\mrdejong.github.com\css\_style\_navigation.scss */
+.navbar ul li.active a {
+  color: rgba(204, 204, 204, 0.9);
+  text-shadow: 0 0 4px #cccccc;
+  font-weight: 700;
+}
+
+/* line 84, C:\wamp\projects\mrdejong.github.com\css\_style\_navigation.scss */
+.bg003 .navbar .brand {
+  color: #1a1a1a;
+}
+/* line 87, C:\wamp\projects\mrdejong.github.com\css\_style\_navigation.scss */
+.bg003 .navbar .brand small {
+  color: #404040;
+}
+/* line 92, C:\wamp\projects\mrdejong.github.com\css\_style\_navigation.scss */
+.bg003 .navbar ul li a {
+  color: #4d4d4d;
+}
