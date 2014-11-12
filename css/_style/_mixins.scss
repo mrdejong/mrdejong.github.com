@@ -1,7 +1,0 @@
-@mixin full-background-img($img) {
-	background: url($img) no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
